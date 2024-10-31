@@ -1,2 +1,2 @@
 # samportfolio
-This my portfolio
+This is my web portfolio
