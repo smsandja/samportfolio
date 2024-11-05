@@ -8,6 +8,12 @@ import Dev from "./Realisation/Dev";
 import Projet from "./Realisation/Projet";
 
 function App() {
+const projets = [
+                {id: 1, title: "Mangadex", body:"Mangadex est un site web de Pokemon, on y retrouve plusieurs types de pokemon avec leurs differentes caracteristiques. On a meme la possibilité dùen creer:"},
+                {id: 2, title: "GameBoy", body:"GameBoy est une forme de jeu fait en VueJs. Il teste vos reflexes et vous dis si vous etes rapides ou lent."},
+                {id: 3, title: "Samy-blog", body:"C'est un blog conçu avec mon langage front-end favoris @ReactJs"},
+                {id: 4, title: "Samy-blog", body:"C'est un blog conçu avec mon langage front-end favoris @ReactJs"}
+            ];
   return (
     <Router>
       <div className="App">
@@ -17,7 +23,7 @@ function App() {
         <div className="p-4">
           <Switch>
               <Route exact path="/">
-                 <Resume />
+                 <Resume projets={projets}/>
               </Route>
               <Route path="/cv">
                  <Cv />
